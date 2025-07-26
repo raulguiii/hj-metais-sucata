@@ -734,3 +734,102 @@ main .recent-orders a{
   background: linear-gradient(90deg, var(--primary), var(--primary-light));
   border-radius: 10px;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.close-button-pagamento {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button-pagamento:hover {
+  color: black;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary, #007bff), var(--primary-light, #5ea2ff));
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--secondary, #0056b3), var(--primary, #007bff));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(58, 12, 163, 0.2);
+}
+
+.btn-adicionar {
+  background: linear-gradient(135deg, var(--primary, #007bff), var(--primary-light, #5ea2ff));
+  color: white;
+}
+
+.btn-adicionar:hover {
+  background: linear-gradient(135deg, var(--secondary, #0056b3), var(--primary, #007bff));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(58, 12, 163, 0.2);
+}
+
+/* Ajuste para inputs e textarea */
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content input[type="datetime-local"],
+.modal-content input[type="month"],
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+
+/* Inputs e Textareas */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

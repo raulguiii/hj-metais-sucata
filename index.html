@@ -19,6 +19,12 @@
             display: block;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
 </head>
 <body>
     <div class="container">
@@ -85,6 +91,8 @@
         
         <main>
 
+
+        <!-- A B A     D O    I N I C I O -->
         <section data-content="inicio" class="active">
             <div class="title">INÍCIO</div>
 
@@ -136,7 +144,7 @@
                 </div>
 
                 <div class="recent-orders">
-                    <h2>FATURAMENTO 2025</h2>
+                    <h2>FATURAMENTO - 2025</h2>
                     <table>
                         <thead>
                             <tr>
@@ -264,46 +272,151 @@
         </section>
 
       
+
+
+            <!-- A B A     D A   P L A N I L H A     G E R A L  -->
             <section data-content="planilha">
                 <h1>Planilha Geral</h1>
                 <p>Conteúdo da planilha geral...</p>
             </section>
 
+
+
+            <!-- A B A     D A    C O N T A    D E      A G U A -->
             <section data-content="agua">
-                <h1>Água</h1>
-                <p>Informações sobre consumo de água...</p>
+                <div class="title">ÁGUA</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        💧 <strong>Bem-vindo à Central de Contas de Água</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de água. Para adicionar um novo pagamento, basta clicar em <strong>"Registrar"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                    <p>
+                        ⏰ No dia <strong>20 de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                    </p>
+                </div>
+
+                <!-- Modal Registrar Pagamento Água -->
+                <div id="modalPagamentoAgua" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento">&times;</span>
+                    <h2>Registrar Pagamento de Água</h2>
+                    <form id="formPagamentoAgua">
+                    <label>Data:</label><br>
+                    <input type="date" id="dataAgua" name="dataAgua" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorAgua" name="valorAgua" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO CONTA DE ÁGUA - AGOSTO/25</h2>
+                        <button id="btnAbrirModalAgua" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agua-body">
+                            <tr><td>01/08/2025</td><td>R$454,71</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
+
+
+
+            <!-- A B A     D O    A L U G U E L -->
             <section data-content="aluguel">
                 <h1>Aluguel</h1>
                 <p>Controle de despesas com aluguel...</p>
             </section>
 
+
+
+
+            <!-- A B A     D A    C O N T A B I L I D A D E-->
             <section data-content="contabilidade">
                 <h1>Contabilidade</h1>
                 <p>Informações contábeis...</p>
             </section>
 
+
+
+
+            <!-- A B A     D A    E N E R G I A-->
             <section data-content="energia">
                 <h1>Energia</h1>
                 <p>Consumo de energia elétrica...</p>
             </section>
 
+
+
+
+            <!-- A B A     D O S    F U N C I O N A R I O S-->
             <section data-content="funcionarios">
                 <h1>Funcionários</h1>
                 <p>Dados dos funcionários...</p>
             </section>
 
+
+
+
+            <!-- A B A     D O      G Á S -->
             <section data-content="gas">
                 <h1>Gás</h1>
                 <p>Controle de gás utilizado...</p>
             </section>
 
+
+
+
+            <!-- A B A     D O S     M A T E R I A I S-->
             <section data-content="materiais">
                 <h1>Materiais</h1>
                 <p>Estoque e movimentações de materiais...</p>
             </section>
+    
             
+            <!-- A B A     D A S     R E F E I C O E S-->
             <section data-content="refeicoes">
                 <h1>Refeições</h1>
                 <p>Controle de refeições servidas...</p>

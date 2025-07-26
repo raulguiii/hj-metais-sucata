@@ -1,27 +1,45 @@
-const sideMenu = document.querySelector("aside");
-const menuBtn = document.querySelector("#menu-btn");
-const closeBtn = document.querySelector("#close-btn");
-const themeToggler = document.querySelector(".theme-toggler");
+function configurarControlesDaAbaAtiva() {
+    const abaAtiva = document.querySelector('section.active, [data-content].active');
+    if (!abaAtiva) return;
 
+    const sideMenu = document.querySelector("aside"); // Assumindo que há apenas um menu lateral
+    const menuBtn = abaAtiva.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn"); // Só precisa de um, se existir
+    const themeToggler = abaAtiva.querySelector(".theme-toggler");
 
-// Abrir sidebar
-menuBtn.addEventListener('click' , () => {
-    sideMenu.style.display = 'block';
-})
+    // Evento abrir menu
+    if (menuBtn && sideMenu) {
+        menuBtn.onclick = () => {
+            sideMenu.style.display = 'block';
+        };
+    }
 
-//Fechar sidbar
-closeBtn.addEventListener( 'click', () =>{
-    sideMenu.style.display = 'none'
-})
+    // Evento fechar menu
+    if (closeBtn && sideMenu) {
+        closeBtn.onclick = () => {
+            sideMenu.style.display = 'none';
+        };
+    }
 
-// MUDAR THEME
+    // Alternar tema
+    if (themeToggler) {
+        themeToggler.onclick = () => {
+            document.body.classList.toggle('dark-theme-variables');
+            themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+            themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+        };
+    }
+}
 
-themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme-variables');
+// Chama a configuração ao carregar
+configurarControlesDaAbaAtiva();
 
-    themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-    themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-})
+// Se você muda de aba com botões ou navegação, chame isso após trocar a aba:
+document.querySelectorAll('[data-tab]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        setTimeout(() => configurarControlesDaAbaAtiva(), 50);
+    });
+});
 
 
 const navItems = document.querySelectorAll('.nav-item');
@@ -56,3 +74,33 @@ function mostrarMais(e) {
     linhas.forEach(linha => linha.style.display = 'table-row');
     document.getElementById('ver-mais').style.display = 'none';
 }
+
+
+
+const modal = document.getElementById("modalPagamentoAgua");
+  const btnAbrir = document.getElementById("btnAbrirModalAgua");
+  const btnFechar = document.querySelector(".close-button-pagamento");
+  const form = document.getElementById("formPagamentoAgua");
+
+  btnAbrir.onclick = () => modal.style.display = "block";
+  btnFechar.onclick = () => modal.style.display = "none";
+  
+
+  form.onsubmit = function (e) {
+    e.preventDefault();
+    const data = document.getElementById("dataAgua").value;
+    const valor = document.getElementById("valorAgua").value;
+
+    if (!data || !valor) {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    const tabela = document.getElementById("agua-body");
+    const novaLinha = document.createElement("tr");
+    novaLinha.innerHTML = `<td>${data.split("-").reverse().join("/")}</td><td>${valor}</td>`;
+    tabela.appendChild(novaLinha);
+
+    modal.style.display = "none";
+    form.reset();
+  };
