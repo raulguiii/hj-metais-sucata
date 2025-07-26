@@ -407,10 +407,9 @@ main .recent-orders a{
 /* ==================Right================ */
 .right {
   position: absolute;
-  top: 8rem;
+  top: 2rem; /* antes era 8rem */
   right: 2rem;
   width: 300px;
-
   display: flex;
   flex-direction: column;
   gap: 2rem; /* espaçamento entre os blocos */
@@ -695,6 +694,10 @@ main .recent-orders a{
     }
 
     .right .profile .info {
+        display: none;
+    }
+
+    .right .recent-updates {
         display: none;
     }
 
