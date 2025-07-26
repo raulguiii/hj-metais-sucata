@@ -701,6 +701,10 @@ main .recent-orders a{
         display: none;
     }
 
+    .right .sales-analytics {
+        display: none;
+    }
+
     .right .top button{
         display: inline-block;
         background: transparent;
