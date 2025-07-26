@@ -68,6 +68,7 @@ body {
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
+    align-items: flex-start;
 }
 
 a {
@@ -404,8 +405,15 @@ main .recent-orders a{
 
 
 /* ==================Right================ */
-.right{
-    margin-top: 1.4rem;
+.right {
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* espaçamento entre os blocos */
 }
 
 .right .top{
@@ -702,4 +710,31 @@ main .recent-orders a{
     .right .top button span {
         font-size: 2rem;
     }
+}
+
+.page-title {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 10px;
 }
