@@ -761,7 +761,9 @@ main .recent-orders a{
   font-size: 16px;
   color: #000;
 }
-
+.close-button-pagamento-energia,
+.close-button-pagamento-contabilidade,
+.close-button-pagamento-aluguel,
 .close-button-pagamento {
   color: #aaa;
   float: right;
@@ -769,7 +771,9 @@ main .recent-orders a{
   font-weight: bold;
   cursor: pointer;
 }
-
+.close-button-pagamento-energia,
+.close-button-pagamento-contabilidade:hover,
+.close-button-pagamento-aluguel:hover,
 .close-button-pagamento:hover {
   color: black;
 }

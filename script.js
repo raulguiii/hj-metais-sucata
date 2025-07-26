@@ -42,6 +42,17 @@ document.querySelectorAll('[data-tab]').forEach(btn => {
 });
 
 
+document.getElementById('btnHJ').addEventListener('click', function (e) {
+    e.preventDefault(); // impede o comportamento padrão do link
+    location.reload();  // força o reload da página
+});
+
+document.getElementById('btnMetais').addEventListener('click', function (e) {
+    e.preventDefault();
+    location.reload();
+});
+
+
 const navItems = document.querySelectorAll('.nav-item');
         const contentSections = document.querySelectorAll('main section');
 
@@ -76,7 +87,7 @@ function mostrarMais(e) {
 }
 
 
-
+// MODAL DE PAGAMENTO AGUA
 const modal = document.getElementById("modalPagamentoAgua");
   const btnAbrir = document.getElementById("btnAbrirModalAgua");
   const btnFechar = document.querySelector(".close-button-pagamento");
@@ -104,3 +115,55 @@ const modal = document.getElementById("modalPagamentoAgua");
     modal.style.display = "none";
     form.reset();
   };
+
+
+// MODAL DE PAGAMENTO ALUGUEL
+const modalPagamentoAluguel = document.getElementById("modalPagamentoAluguel");
+const btnAbrirModalAluguel = document.getElementById("btnAbrirModalAluguel"); // mesmo ID do botão "+"
+const closeModalAluguel = document.querySelector(".close-button-pagamento-aluguel");
+
+// Abrir o modal
+btnAbrirModalAluguel.addEventListener("click", () => {
+    modalPagamentoAluguel.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalAluguel.addEventListener("click", () => {
+    modalPagamentoAluguel.style.display = "none";
+});
+
+
+
+// MODAL DE PAGAMENTO CONTABILIDADE
+const modalPagamentoContabilidade = document.getElementById("modalPagamentoContabilidade");
+const btnAbrirModalContabilidade = document.getElementById("btnAbrirModalContabilidade"); // mesmo ID do botão "+"
+const closeModalContabilidade = document.querySelector(".close-button-pagamento-contabilidade");
+
+// Abrir o modal
+btnAbrirModalContabilidade.addEventListener("click", () => {
+    modalPagamentoContabilidade.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalContabilidade.addEventListener("click", () => {
+    modalPagamentoContabilidade.style.display = "none";
+});
+
+
+
+
+
+// MODAL DE PAGAMENTO ENERGIA
+const modalPagamentoEnergia = document.getElementById("modalPagamentoEnergia");
+const btnAbrirModalEnergia = document.getElementById("btnAbrirModalEnergia"); // mesmo ID do botão "+"
+const closeModalEnergia = document.querySelector(".close-button-pagamento-energia");
+
+// Abrir o modal
+btnAbrirModalEnergia.addEventListener("click", () => {
+    modalPagamentoEnergia.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalEnergia.addEventListener("click", () => {
+    modalPagamentoEnergia.style.display = "none";
+});

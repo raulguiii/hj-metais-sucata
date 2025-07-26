@@ -31,7 +31,7 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <h2>HJ<span class="danger">METAIS</span></h2>
+                    <h2 href="#" id="btnHJ">HJ<span class="danger" href="#" id="btnMetais">METAIS</span></h2>
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">close</span>
@@ -94,7 +94,7 @@
 
         <!-- A B A     D O    I N I C I O -->
         <section data-content="inicio" class="active">
-            <div class="title">INÍCIO</div>
+            <div class="title">🏠 INÍCIO</div>
 
                 <div class="insights">
                 <div class="sales">
@@ -276,7 +276,7 @@
 
             <!-- A B A     D A   P L A N I L H A     G E R A L  -->
             <section data-content="planilha">
-                <h1>Planilha Geral</h1>
+                <h1>📊 Planilha Geral</h1>
                 <p>Conteúdo da planilha geral...</p>
             </section>
 
@@ -284,7 +284,7 @@
 
             <!-- A B A     D A    C O N T A    D E      A G U A -->
             <section data-content="agua">
-                <div class="title">ÁGUA</div>
+                <div class="title">💧ÁGUA</div>
 
                 <!-- Texto antes dos cards -->
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
@@ -293,7 +293,7 @@
                         Esta seção foi criada para facilitar o controle e o registro das contas de água. Para adicionar um novo pagamento, basta clicar em <strong>"Registrar"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
                     </p>
                     <p>
-                        ⏰ No dia <strong>20 de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
                     </p>
                 </div>
 
@@ -303,6 +303,11 @@
                     <span class="close-button-pagamento">&times;</span>
                     <h2>Registrar Pagamento de Água</h2>
                     <form id="formPagamentoAgua">
+
+                    <label>Título</label><br>
+                    <input type="text" id="tituloAgua" name="tituloAgua" required><br><br>
+
+
                     <label>Data:</label><br>
                     <input type="date" id="dataAgua" name="dataAgua" required><br><br>
 
@@ -326,12 +331,13 @@
                     <table>
                         <thead>
                             <tr>
+                                <th>Título</th>
                                 <th>Data</th>
                                 <th>Valor</th>
                             </tr>
                         </thead>
                         <tbody id="agua-body">
-                            <tr><td>01/08/2025</td><td>R$454,71</td></tr>
+                            <tr><td>Sabesp</td><td>01/08/2025</td><td>R$454,71</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -366,8 +372,87 @@
 
             <!-- A B A     D O    A L U G U E L -->
             <section data-content="aluguel">
-                <h1>Aluguel</h1>
-                <p>Controle de despesas com aluguel...</p>
+                <div class="title">🏢 ALUGUEL</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Contas de Aluguel</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de aluguel. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                    <p>
+                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Água -->
+                <div id="modalPagamentoAluguel" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-aluguel">&times;</span>
+                    <h2>Registrar Pagamento de Aluguel</h2>
+                    <form id="formPagamentoAluguel">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloAluguel" name="tituloAluguel" required><br><br>
+                    
+                    <label>Data:</label><br>
+                    <input type="date" id="dataAluguel" name="dataAluguel" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorAluguel" name="valorAluguel" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO ALUGUEL - AGOSTO/25</h2>
+                        <button id="btnAbrirModalAluguel" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agua-body">
+                            <tr><td>Aluguel 2 galpões</td><td>05/08/2025</td><td>R$7.000,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -375,8 +460,87 @@
 
             <!-- A B A     D A    C O N T A B I L I D A D E-->
             <section data-content="contabilidade">
-                <h1>Contabilidade</h1>
-                <p>Informações contábeis...</p>
+                <div class="title">🧾 CONTABILIDADE</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Contas da Contabilidade</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de contabilidade. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                    <p>
+                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Contabilidade -->
+                <div id="modalPagamentoContabilidade" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-contabilidade">&times;</span>
+                    <h2>Registrar Pagamento de Contabilidade</h2>
+                    <form id="formPagamentoContabilidade">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloContabilidade" name="tituloContabilidade" required><br><br>
+                        
+                    <label>Data:</label><br>
+                    <input type="date" id="dataContabilidade" name="dataContabilidade" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorContabilidade" name="valorContabilidade" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO CONTABILIDADE - AGOSTO/25</h2>
+                        <button id="btnAbrirModalContabilidade" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agua-body">
+                            <tr><td>Lucas Contador</td><td>02/08/2025</td><td>R$1.000,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -384,8 +548,87 @@
 
             <!-- A B A     D A    E N E R G I A-->
             <section data-content="energia">
-                <h1>Energia</h1>
-                <p>Consumo de energia elétrica...</p>
+                 <div class="title">⚡ ENERGIA</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Contas de Energia</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de energia. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                    <p>
+                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Contabilidade -->
+                <div id="modalPagamentoEnergia" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-energia">&times;</span>
+                    <h2>Registrar Pagamento de Energia</h2>
+                    <form id="formPagamentoEnergia">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloEnergia" name="tituloEnergia" required><br><br>
+
+                    <label>Data:</label><br>
+                    <input type="date" id="dataEnergia" name="dataEnergia" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorEnergia" name="valorEnergia" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO ENERGIA - AGOSTO/25</h2>
+                        <button id="btnAbrirModalEnergia" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agua-body">
+                            <tr><td>Energia EDP</td><td>15/08/2025</td><td>R$323,40</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
