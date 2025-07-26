@@ -36,47 +36,47 @@
                 <div class="nav-menu">
                     <a href="#" class="nav-item active" data-tab="inicio">
                         <span class="material-icons-sharp">home</span>
-                        <h3>Início</h3>
+                        <h3>INÍCIO</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="planilha">
                         <span class="material-icons-sharp">table_chart</span>
-                        <h3>Planilha Geral</h3>
+                        <h3>PLANILHA GERAL</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="agua">
                         <span class="material-icons-sharp">water_drop</span>
-                        <h3>Água</h3>
+                        <h3>ÁGUA</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="aluguel">
                         <span class="material-icons-sharp">apartment</span>
-                        <h3>Aluguel</h3>
+                        <h3>ALUGUEL</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="contabilidade">
                         <span class="material-icons-sharp">calculate</span>
-                        <h3>Contabilidade</h3>
+                        <h3>CONTABILIDADE</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="energia">
                         <span class="material-icons-sharp">bolt</span>
-                        <h3>Energia</h3>
+                        <h3>ENERGIA</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="funcionarios">
                         <span class="material-icons-sharp">badge</span>
-                        <h3>Funcionários</h3>
+                        <h3>FUNCIONÁRIOS</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="gas">
                         <span class="material-icons-sharp">local_gas_station</span>
-                        <h3>Gás</h3>
+                        <h3>GÁS</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="materiais">
                         <span class="material-icons-sharp">inventory_2</span>
-                        <h3>Materiais</h3>
+                        <h3>MATERIAIS</h3>
                     </a>
                     <a href="#" class="nav-item" data-tab="refeicoes">
                         <span class="material-icons-sharp">restaurant</span>
-                        <h3>Refeições</h3>
+                        <h3>REFEIÇÕES</h3>
                     </a>
                     <a href="#">
                         <span class="material-icons-sharp">logout</span>
-                        <h3>Sair</h3>
+                        <h3>SAIR</h3>
                     </a>
                 </div>
             </div>
@@ -86,7 +86,6 @@
         <main>
 
         <section data-content="inicio" class="active">
-        
             <div class="title">INÍCIO</div>
 
                 <div class="insights">
@@ -94,7 +93,7 @@
                     <span class="material-icons-sharp">bar_chart</span>
                     <div class="middle">
                     <div class="left">
-                        <h3>Faturamento junho</h3>
+                        <h3>FATURAMENTO JUNHO</h3>
                         <h1>R$25.024,89</h1>
                     </div>
                     <div class="progress">
@@ -109,7 +108,7 @@
                     <span class="material-icons-sharp">bar_chart</span>
                     <div class="middle">
                     <div class="left">
-                        <h3>Faturamento julho</h3>
+                        <h3>FATURAMENTO JULHO</h3>
                         <h1>R$14.160,87</h1>
                     </div>
                     <div class="progress">
@@ -124,7 +123,7 @@
                     <span class="material-icons-sharp">bar_chart</span>
                     <div class="middle">
                     <div class="left">
-                        <h3>Faturamento Agosto</h3>
+                        <h3>FATURAMENTO AGOSTO</h3>
                         <h1>R$14.160,87</h1>
                     </div>
                     <div class="progress">
@@ -137,139 +136,132 @@
                 </div>
 
                 <div class="recent-orders">
-                <h2>Faturamento 2025</h2>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Mês</th>
-                        <th>Status</th>
-                        <th>Valor</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr><td>Janeiro</td><td>Concluído</td><td>R$18.124,71</td></tr>
-                    <tr><td>Fevereiro</td><td>Concluído</td><td>R$9.210,14</td></tr>
-                    <tr><td>Março</td><td>Concluído</td><td>R$19.890,45</td></tr>
-                    <tr><td>Abril</td><td>Pendente</td><td>R$12.200,00</td></tr>
-                    </tbody>
-                </table>
-                <a href="#">Mostrar mais</a>
-            </div>
-
-            <div class="right">
-                <div class="top">
-                    <button id="menu-btn"> 
-                        <span class="material-icons-sharp">
-                            menu
-                            </span>
-                    </button>
-
-                    <div class="theme-toggler">
-                        <span class="material-icons-sharp active">light_mode</span>
-                        <span class="material-icons-sharp">dark_mode</span>
-                    </div>
-
-                    <div class="profile">
-                        <div class="info">
-                            <p>Olá, <b>Heitor</b></p>
-                            <small class="text-muted">Dono</small>
-                        </div>
-                        <div class="profile-photo">
-                            <img src="./images/profile-1.jpg" alt="">
-                        </div>
-                    </div>
-
+                    <h2>FATURAMENTO 2025</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mês</th>
+                                <th>Status</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="faturamento-body">
+                            <tr><td>Janeiro</td><td>Concluído</td><td>R$18.124,71</td></tr>
+                            <tr><td>Fevereiro</td><td>Concluído</td><td>R$9.210,14</td></tr>
+                            <tr><td>Março</td><td>Concluído</td><td>R$19.890,45</td></tr>
+                            <tr><td>Abril</td><td>Concluído</td><td>R$12.200,00</td></tr>
+                            <tr style="display: none;"><td>Maio</td><td>Concluído</td><td>R$15.230,90</td></tr>
+                            <tr style="display: none;"><td>Junho</td><td>Concluído</td><td>R$13.750,20</td></tr>
+                            <tr style="display: none;"><td>Julho</td><td>Pendente</td><td>R$11.100,00</td></tr>
+                            <!-- adicione mais se quiser -->
+                        </tbody>
+                    </table>
+                    <a href="#" id="ver-mais" onclick="mostrarMais(event)">Mostrar mais</a>
                 </div>
 
-                <div class="recent-updates">
-                    <h2>Últimas alterações</h2>
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">
+                                menu
+                                </span>
+                        </button>
 
-                    <div class="updates">
-                        <div class="update">
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
                             <div class="profile-photo">
                                 <img src="./images/profile-1.jpg" alt="">
                             </div>
-                            <div class="message">
-                                <p><b>Heitor Jesus</b> registrou um café da manhã para os funcionários no valor de R$81,50.</p>
-                                <small class="text-muted">1 dia atrás</small>
-                            </div>
                         </div>
 
-                        <div class="update">
-                            <div class="profile-photo">
-                                <img src="./images/profile-1.jpg" alt="">
-                            </div>
-                            <div class="message">
-                                <p><b>Heitor Jesus</b> registrou a entrada de 24kg de material do tipo Multiplex.</p>
-                                <small class="text-muted">2 dias atrás</small>
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="update">
-                            <div class="profile-photo">
-                                <img src="./images/profile-1.jpg" alt="">
+                    <div class="recent-updates">
+                        <h2>ÚLTIMAS ALTERAÇÕES</h2>
+
+                        <div class="updates">
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-1.jpg" alt="">
+                                </div>
+                                <div class="message">
+                                    <p><b>Heitor Jesus</b> registrou um café da manhã para os funcionários no valor de R$81,50.</p>
+                                    <small class="text-muted">1 dia atrás</small>
+                                </div>
                             </div>
-                            <div class="message">
-                                <p><b>Heitor Jesus</b> registrou o pagamento da conta de energia no valor de R$210,21.</p>
-                                <small class="text-muted">4 dias atrás</small>
+
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-1.jpg" alt="">
+                                </div>
+                                <div class="message">
+                                    <p><b>Heitor Jesus</b> registrou a entrada de 24kg de material do tipo Multiplex.</p>
+                                    <small class="text-muted">2 dias atrás</small>
+                                </div>
+                            </div>
+
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-1.jpg" alt="">
+                                </div>
+                                <div class="message">
+                                    <p><b>Heitor Jesus</b> registrou o pagamento da conta de energia no valor de R$210,21.</p>
+                                    <small class="text-muted">4 dias atrás</small>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="sales-analytics">
+                    <h2>VALOR DO MATERIAL</h2>
+
+                    <div class="item online">
+                        <div class="icon">
+                            <span class="material-icons-sharp">category</span> <!-- Ícone para Alumínio -->
+                        </div>
+                            <div class="info">
+                                <h3>Alumínio</h3>
+                                <small class="text-muted">Valor atual</small>
+                            </div>
+                            <h5 class="success">+39%</h5>
+                            <h3>R$7,15</h3>
+                        </div>
+                    
+
+                    <div class="item offline">
+                        <div class="icon">
+                            <span class="material-icons-sharp">electrical_services</span> <!-- Ícone para Cobre -->
+                        </div>
+                            <div class="info">
+                                <h3>Cobre</h3>
+                                <small class="text-muted">Valor atual</small>
+                            </div>
+                            <h5 class="danger">-17%</h5>
+                            <h3>R$34,50</h3>
+                        </div>
+
+                    <div class="item customers">
+                        <div class="icon">
+                            <span class="material-icons-sharp">construction</span> <!-- Ícone para Ferro -->
+                        </div>
+                            <div class="info">
+                                <h3>Ferro</h3>
+                                <small class="text-muted">Valor atual</small>
+                            </div>
+                            <h5 class="success">+25%</h5>
+                            <h3>R$18,00</h3>
+                        </div>
                 </div>
-
-                <div class="sales-analytics">
-                <h2>Valor do material</h2>
-
-                <div class="item online">
-                    <div class="icon">
-                        <span class="material-icons-sharp">category</span> <!-- Ícone para Alumínio -->
-                    </div>
-                        <div class="info">
-                            <h3>Alumínio</h3>
-                            <small class="text-muted">Valor atual</small>
-                        </div>
-                        <h5 class="success">+39%</h5>
-                        <h3>R$7,15</h3>
-                    </div>
-                
-
-                <div class="item offline">
-                    <div class="icon">
-                        <span class="material-icons-sharp">electrical_services</span> <!-- Ícone para Cobre -->
-                    </div>
-                        <div class="info">
-                            <h3>Cobre</h3>
-                            <small class="text-muted">Valor atual</small>
-                        </div>
-                        <h5 class="danger">-17%</h5>
-                        <h3>R$34,50</h3>
-                    </div>
-
-                <div class="item customers">
-                    <div class="icon">
-                        <span class="material-icons-sharp">construction</span> <!-- Ícone para Ferro -->
-                    </div>
-                        <div class="info">
-                            <h3>Ferro</h3>
-                            <small class="text-muted">Valor atual</small>
-                        </div>
-                        <h5 class="success">+25%</h5>
-                        <h3>R$18,00</h3>
-                    </div>
-
-                <div class="item add-product">
-                    <div>
-                        <span class="material-icons-sharp">add_box</span> <!-- Ícone para adicionar produto -->
-                        <h3>Adicionar Produto</h3>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-          
-            </section>
+            </div> 
+        </section>
 
       
             <section data-content="planilha">
@@ -333,33 +325,10 @@
 
     <!-- SCRIPT DE TROCA DE ABAS -->
     <script>
-        const navItems = document.querySelectorAll('.nav-item');
-        const contentSections = document.querySelectorAll('main section');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', e => {
-                e.preventDefault();
-
-                // Remove 'active' de todos os itens
-                navItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-
-                // Esconde todos os conteúdos
-                contentSections.forEach(section => {
-                    section.classList.remove('active');
-                });
-
-                // Mostra conteúdo da aba clicada
-                const tabName = item.getAttribute('data-tab');
-                const targetSection = document.querySelector(`section[data-content="${tabName}"]`);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                }
-            });
-        });
+        
     </script>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
     <script src="./ordes.js"></script>
 </body>
 </html>
