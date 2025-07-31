@@ -80,6 +80,10 @@
                         <span class="material-icons-sharp">restaurant</span>
                         <h3>REFEIÇÕES</h3>
                     </a>
+                    <a href="#" class="nav-item" data-tab="diversos">
+                        <span class="material-icons-sharp">more</span>
+                        <h3>Outros</h3>
+                    </a>
                     <a href="#">
                         <span class="material-icons-sharp">logout</span>
                         <h3>SAIR</h3>
@@ -287,7 +291,7 @@
                 <div class="title">💧ÁGUA</div>
 
                 <!-- Texto antes dos cards -->
-                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         💧 <strong>Bem-vindo à Central de Contas de Água</strong><br>
                         Esta seção foi criada para facilitar o controle e o registro das contas de água. Para adicionar um novo pagamento, basta clicar em <strong>"Registrar"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
@@ -300,7 +304,7 @@
                 <!-- Modal Registrar Pagamento Água -->
                 <div id="modalPagamentoAgua" class="modal">
                 <div class="modal-content">
-                    <span class="close-button-pagamento">&times;</span>
+                    <span class="close-button-pagamento-agua">&times;</span>
                     <h2>Registrar Pagamento de Água</h2>
                     <form id="formPagamentoAgua">
 
@@ -314,7 +318,7 @@
                     <label>Valor:</label><br>
                     <input type="text" id="valorAgua" name="valorAgua" required><br><br>
 
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
                     </form>
                 </div>
                 </div>
@@ -375,7 +379,7 @@
                 <div class="title">🏢 ALUGUEL</div>
 
                 <!-- Texto antes dos cards -->
-                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas de Aluguel</strong><br>
                         Esta seção foi criada para facilitar o controle e o registro das contas de aluguel. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
@@ -402,7 +406,7 @@
                     <label>Valor:</label><br>
                     <input type="text" id="valorAluguel" name="valorAluguel" required><br><br>
 
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
                     </form>
                 </div>
                 </div>
@@ -424,7 +428,7 @@
                                 <th>Valor</th>
                             </tr>
                         </thead>
-                        <tbody id="agua-body">
+                        <tbody id="aluguel-body">
                             <tr><td>Aluguel 2 galpões</td><td>05/08/2025</td><td>R$7.000,00</td></tr>
                         </tbody>
                     </table>
@@ -463,7 +467,7 @@
                 <div class="title">🧾 CONTABILIDADE</div>
 
                 <!-- Texto antes dos cards -->
-                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas da Contabilidade</strong><br>
                         Esta seção foi criada para facilitar o controle e o registro das contas de contabilidade. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
@@ -490,7 +494,7 @@
                     <label>Valor:</label><br>
                     <input type="text" id="valorContabilidade" name="valorContabilidade" required><br><br>
 
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
                     </form>
                 </div>
                 </div>
@@ -512,7 +516,7 @@
                                 <th>Valor</th>
                             </tr>
                         </thead>
-                        <tbody id="agua-body">
+                        <tbody id="contabilidade-body">
                             <tr><td>Lucas Contador</td><td>02/08/2025</td><td>R$1.000,00</td></tr>
                         </tbody>
                     </table>
@@ -551,7 +555,7 @@
                  <div class="title">⚡ ENERGIA</div>
 
                 <!-- Texto antes dos cards -->
-                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid blue; border-radius: 6px;">
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas de Energia</strong><br>
                         Esta seção foi criada para facilitar o controle e o registro das contas de energia. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
@@ -578,7 +582,7 @@
                     <label>Valor:</label><br>
                     <input type="text" id="valorEnergia" name="valorEnergia" required><br><br>
 
-                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
                     </form>
                 </div>
                 </div>
@@ -600,7 +604,7 @@
                                 <th>Valor</th>
                             </tr>
                         </thead>
-                        <tbody id="agua-body">
+                        <tbody id="energia-body">
                             <tr><td>Energia EDP</td><td>15/08/2025</td><td>R$323,40</td></tr>
                         </tbody>
                     </table>
@@ -636,8 +640,87 @@
 
             <!-- A B A     D O S    F U N C I O N A R I O S-->
             <section data-content="funcionarios">
-                <h1>Funcionários</h1>
-                <p>Dados dos funcionários...</p>
+                <div class="title">👷‍♂️ FUNCIONÁRIOS</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Salários de Funcionários</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de funcionários. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                    <p>
+                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Funcionarios -->
+                <div id="modalPagamentoFuncionarios" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-funcionarios">&times;</span>
+                    <h2>Registrar Pagamento de Funcionários</h2>
+                    <form id="formPagamentoFuncionarios">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloFuncionarios" name="tituloFuncionarios" required><br><br>
+
+                    <label>Data:</label><br>
+                    <input type="date" id="dataFuncionarios" name="dataFuncionarios" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorFuncionarios" name="valorFuncionarios" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO FUNCIONÁRIOS - AGOSTO/25</h2>
+                        <button id="btnAbrirModalFuncionarios" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="funcionarios-body">
+                            <tr><td>Salário Julho</td><td>31/07/2025</td><td>R$21.142,30</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -645,8 +728,85 @@
 
             <!-- A B A     D O      G Á S -->
             <section data-content="gas">
-                <h1>Gás</h1>
-                <p>Controle de gás utilizado...</p>
+                <div class="title">🧯 GÁS</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Gás</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de Gás. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Gás -->
+                <div id="modalPagamentoGas" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-gas">&times;</span>
+                    <h2>Registrar Pagamento de Gás</h2>
+                    <form id="formPagamentoGas">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloGas" name="tituloGas" required><br><br>
+
+                    <label>Data:</label><br>
+                    <input type="date" id="dataGas" name="dataGas" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorGas" name="valorGas" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO GÁS - AGOSTO/25</h2>
+                        <button id="btnAbrirModalGas" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="gas-body">
+                            <tr><td>1 gás de máquina</td><td>31/07/2025</td><td>R$81,21</td></tr>
+                            <tr><td>1 gás de cozinha</td><td>31/07/2025</td><td>R$101,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -661,8 +821,171 @@
             
             <!-- A B A     D A S     R E F E I C O E S-->
             <section data-content="refeicoes">
-                <h1>Refeições</h1>
-                <p>Controle de refeições servidas...</p>
+                <div class="title">🍽️ REFEIÇÕES</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Refeições</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro das contas de Refeições. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Gás -->
+                <div id="modalPagamentoRefeicoes" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-refeicoes">&times;</span>
+                    <h2>Registrar Pagamento de Refeições</h2>
+                    <form id="formPagamentoRefeicoes">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloRefeicoes" name="tituloGas" required><br><br>
+
+                    <label>Data:</label><br>
+                    <input type="date" id="dataRefeicoes" name="dataRefeicoes" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorRefeicoes" name="valorRefeicoes" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO REFEIÇÕES - AGOSTO/25</h2>
+                        <button id="btnAbrirModalRefeicoes" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="refeicoes-body">
+                            <tr><td>Café da manhã</td><td>01/08/2025</td><td>R$61,21</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- A B A     D O      D I V E R S O S  -->
+            <section data-content="diversos">
+                <div class="title">🗂️ DIVERSOS</div>
+
+                <!-- Texto antes dos cards -->
+                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        🏠 <strong>Bem-vindo à Central de Diversos</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro de contas diversas, que não se encaixam em nenhuma das outras abas. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                    </p>
+                </div>
+
+
+                <!-- Modal Registrar Pagamento Diversos -->
+                <div id="modalPagamentoDiversos" class="modal">
+                <div class="modal-content">
+                    <span class="close-button-pagamento-diversos">&times;</span>
+                    <h2>Registrar Pagamento de Outras coisas</h2>
+                    <form id="formPagamentoDiversos">
+
+                    <label>Título:</label><br>
+                    <input type="text" id="tituloDiversos" name="tituloDiversos" required><br><br>
+
+                    <label>Data:</label><br>
+                    <input type="date" id="dataDiversos" name="dataDiversos" required><br><br>
+
+                    <label>Valor:</label><br>
+                    <input type="text" id="valorDiversos" name="valorDiversos" required><br><br>
+
+                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                    </form>
+                </div>
+                </div>
+
+
+                <!-- Título + botão "+" -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <h2 style="margin: 0;">PAGAMENTO DIVERSOS - AGOSTO/25</h2>
+                        <button id="btnAbrirModalDiversos" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                            +
+                        </button>
+                </div>
+                    <div class="recent-orders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="diversos-body">
+                            <tr><td>1 caixa de fogos</td><td>28/08/2025</td><td>R$50,00</td></tr>
+                            <tr><td>Hospedagem site</td><td>10/08/2025</td><td>R$35,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bloco inserido abaixo -->
+                <div class="right">
+                    <div class="top">
+                        <button id="menu-btn"> 
+                            <span class="material-icons-sharp">menu</span>
+                        </button>
+
+                        <div class="theme-toggler">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+
+                        <div class="profile">
+                            <div class="info">
+                                <p>Olá, <b>Heitor</b></p>
+                                <small class="text-muted">Dono</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main>

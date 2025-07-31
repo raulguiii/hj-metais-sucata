@@ -761,25 +761,37 @@ main .recent-orders a{
   font-size: 16px;
   color: #000;
 }
+
+.close-button-pagamento-refeicoes,
+.close-button-pagamento-diversos,
+.close-button-pagamento-materiais,
+.close-button-pagamento-gas,
 .close-button-pagamento-energia,
+.close-button-pagamento-funcionarios,
 .close-button-pagamento-contabilidade,
 .close-button-pagamento-aluguel,
-.close-button-pagamento {
+.close-button-pagamento-agua {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
-.close-button-pagamento-energia,
+
+.close-button-pagamento-refeicoes:hover,
+.close-button-pagamento-diversos:hover,
+.close-button-pagamento-materiais:hover,
+.close-button-pagamento-gas:hover,
+.close-button-pagamento-energia:hover,
+.close-button-pagamento-funcionarios:hover,
 .close-button-pagamento-contabilidade:hover,
 .close-button-pagamento-aluguel:hover,
-.close-button-pagamento:hover {
+.close-button-pagamento-agua:hover {
   color: black;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary, #007bff), var(--primary-light, #5ea2ff));
+  background: linear-gradient(var(--color-danger), var(--color-danger));
   color: white;
   padding: 10px 20px;
   border: none;
@@ -789,13 +801,13 @@ main .recent-orders a{
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--secondary, #0056b3), var(--primary, #007bff));
+  background: linear-gradient(135deg, var(--color-danger), var(--color-danger));
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(58, 12, 163, 0.2);
 }
 
 .btn-adicionar {
-  background: linear-gradient(135deg, var(--primary, #007bff), var(--primary-light, #5ea2ff));
+  background: linear-gradient(135deg, var(--color-danger), var(--color-danger));
   color: white;
 }
 

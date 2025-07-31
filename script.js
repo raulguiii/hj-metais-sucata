@@ -2,15 +2,18 @@ function configurarControlesDaAbaAtiva() {
     const abaAtiva = document.querySelector('section.active, [data-content].active');
     if (!abaAtiva) return;
 
-    const sideMenu = document.querySelector("aside"); // Assumindo que há apenas um menu lateral
+    const sideMenu = document.querySelector("aside");
     const menuBtn = abaAtiva.querySelector("#menu-btn");
-    const closeBtn = document.querySelector("#close-btn"); // Só precisa de um, se existir
+    const closeBtn = document.querySelector("#close-btn");
     const themeToggler = abaAtiva.querySelector(".theme-toggler");
 
     // Evento abrir menu
     if (menuBtn && sideMenu) {
         menuBtn.onclick = () => {
             sideMenu.style.display = 'block';
+
+            // Adiciona um listener para detectar cliques fora do menu
+            document.addEventListener('click', fecharMenuAoClicarFora);
         };
     }
 
@@ -18,6 +21,7 @@ function configurarControlesDaAbaAtiva() {
     if (closeBtn && sideMenu) {
         closeBtn.onclick = () => {
             sideMenu.style.display = 'none';
+            document.removeEventListener('click', fecharMenuAoClicarFora);
         };
     }
 
@@ -29,7 +33,16 @@ function configurarControlesDaAbaAtiva() {
             themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
         };
     }
+
+    // Função que fecha o menu se clicar fora
+    function fecharMenuAoClicarFora(event) {
+        if (sideMenu && !sideMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+            sideMenu.style.display = 'none';
+            document.removeEventListener('click', fecharMenuAoClicarFora);
+        }
+    }
 }
+
 
 // Chama a configuração ao carregar
 configurarControlesDaAbaAtiva();
@@ -88,33 +101,20 @@ function mostrarMais(e) {
 
 
 // MODAL DE PAGAMENTO AGUA
-const modal = document.getElementById("modalPagamentoAgua");
-  const btnAbrir = document.getElementById("btnAbrirModalAgua");
-  const btnFechar = document.querySelector(".close-button-pagamento");
-  const form = document.getElementById("formPagamentoAgua");
+const modalPagamentoAgua = document.getElementById("modalPagamentoAgua");
+const btnAbrirModalAgua = document.getElementById("btnAbrirModalAgua"); // mesmo ID do botão "+"
+const closeModalAgua = document.querySelector(".close-button-pagamento-agua");
 
-  btnAbrir.onclick = () => modal.style.display = "block";
-  btnFechar.onclick = () => modal.style.display = "none";
-  
+// Abrir o modal
+btnAbrirModalAgua.addEventListener("click", () => {
+    modalPagamentoAgua.style.display = "block";
+});
 
-  form.onsubmit = function (e) {
-    e.preventDefault();
-    const data = document.getElementById("dataAgua").value;
-    const valor = document.getElementById("valorAgua").value;
+// Fechar o modal ao clicar no X
+closeModalAgua.addEventListener("click", () => {
+    modalPagamentoAgua.style.display = "none";
+});
 
-    if (!data || !valor) {
-      alert("Preencha todos os campos!");
-      return;
-    }
-
-    const tabela = document.getElementById("agua-body");
-    const novaLinha = document.createElement("tr");
-    novaLinha.innerHTML = `<td>${data.split("-").reverse().join("/")}</td><td>${valor}</td>`;
-    tabela.appendChild(novaLinha);
-
-    modal.style.display = "none";
-    form.reset();
-  };
 
 
 // MODAL DE PAGAMENTO ALUGUEL
@@ -166,4 +166,73 @@ btnAbrirModalEnergia.addEventListener("click", () => {
 // Fechar o modal ao clicar no X
 closeModalEnergia.addEventListener("click", () => {
     modalPagamentoEnergia.style.display = "none";
+});
+
+
+
+// MODAL DE PAGAMENTO FUNCIONARIOS
+const modalPagamentoFuncionarios = document.getElementById("modalPagamentoFuncionarios");
+const btnAbrirModalFuncionarios = document.getElementById("btnAbrirModalFuncionarios"); // mesmo ID do botão "+"
+const closeModalFuncionarios = document.querySelector(".close-button-pagamento-funcionarios");
+
+// Abrir o modal
+btnAbrirModalFuncionarios.addEventListener("click", () => {
+    modalPagamentoFuncionarios.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalFuncionarios.addEventListener("click", () => {
+    modalPagamentoFuncionarios.style.display = "none";
+});
+
+
+
+// MODAL DE PAGAMENTO GÁS
+const modalPagamentoGas = document.getElementById("modalPagamentoGas");
+const btnAbrirModalGas = document.getElementById("btnAbrirModalGas"); // mesmo ID do botão "+"
+const closeModalGas = document.querySelector(".close-button-pagamento-gas");
+
+// Abrir o modal
+btnAbrirModalGas.addEventListener("click", () => {
+    modalPagamentoGas.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalGas.addEventListener("click", () => {
+    modalPagamentoGas.style.display = "none";
+});
+
+
+
+
+// MODAL DE PAGAMENTO REFEICOES
+const modalPagamentoRefeicoes = document.getElementById("modalPagamentoRefeicoes");
+const btnAbrirModalRefeicoes = document.getElementById("btnAbrirModalRefeicoes"); // mesmo ID do botão "+"
+const closeModalRefeicoes = document.querySelector(".close-button-pagamento-refeicoes");
+
+// Abrir o modal
+btnAbrirModalRefeicoes.addEventListener("click", () => {
+    modalPagamentoRefeicoes.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalRefeicoes.addEventListener("click", () => {
+    modalPagamentoRefeicoes.style.display = "none";
+});
+
+
+
+// MODAL DE PAGAMENTO Diversos
+const modalPagamentoDiversos = document.getElementById("modalPagamentoDiversos");
+const btnAbrirModalDiversos = document.getElementById("btnAbrirModalDiversos"); // mesmo ID do botão "+"
+const closeModalDiversos = document.querySelector(".close-button-pagamento-diversos");
+
+// Abrir o modal
+btnAbrirModalDiversos.addEventListener("click", () => {
+    modalPagamentoDiversos.style.display = "block";
+});
+
+// Fechar o modal ao clicar no X
+closeModalDiversos.addEventListener("click", () => {
+    modalPagamentoDiversos.style.display = "none";
 });
