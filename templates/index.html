@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HJ METAIS</title>
     <!-- MATERIAL ICONS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -327,7 +328,7 @@
                         <div class="middle">
                             <div class="left">
                                 <h3>VALOR GASTO EM JUNHO</h3>
-                                <h1>R$450,00</h1>
+                                <h1><i class="fa fa-spinner fa-spin fa-2x"></i></h1>
                             </div>
                         </div>
                         <small class="text-muted">Pagamento da conta de água</small>
@@ -338,7 +339,7 @@
                         <div class="middle">
                             <div class="left">
                                 <h3>VALOR GASTO EM JULHO</h3>
-                                <h1>R$470,00</h1>
+                                <h1><i class="fa fa-spinner fa-spin fa-2x"></i></h1>
                             </div>
                         </div>
                         <small class="text-muted">Pagamento da conta de água</small>
@@ -349,7 +350,7 @@
                         <div class="middle">
                             <div class="left">
                                 <h3>VALOR GASTO EM AGOSTO</h3>
-                                <h1>R$454,71</h1>
+                                <h1 id="valorTotalAgua"><i class="fa fa-spinner fa-spin fa-2x"></i></h1>
                             </div>
                         </div>
                         <small class="text-muted">Pagamento da conta de água</small>
@@ -382,7 +383,8 @@
                             <input type="date" id="dataAgua" name="dataAgua" required><br><br>
 
                             <label>Valor:</label><br>
-                            <input type="text" id="valorAgua" name="valorAgua" required><br><br>
+                            <input type="text" id="valorAgua" name="valorAgua" required placeholder="R$0,00"><br><br>
+
 
                             <button type="submit" class="btn btn-primary">SALVAR</button>
                         </form>
@@ -407,6 +409,10 @@
                                 <th>Valor</th>
                             </tr>
                         </thead>
+                        <div id="loading-agua" style="display: none; text-align: center; margin: 20px;">
+                            <i class="fa fa-spinner fa-spin fa-2x"></i>
+                            <p>Carregando dados da água...</p>
+                        </div>
                         <tbody id="agua-body">
                             <tr><td>Sabesp</td><td>01/08/2025</td><td>R$454,71</td></tr>
                         </tbody>
