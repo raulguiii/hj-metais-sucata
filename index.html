@@ -273,6 +273,25 @@
                         </div>
                 </div>
             </div> 
+            <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
+                </div>
         </section>
 
       
@@ -294,44 +313,92 @@
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         💧 <strong>Bem-vindo à Central de Contas de Água</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro das contas de água. Para adicionar um novo pagamento, basta clicar em <strong>"Registrar"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        Abaixo você confere um resumo mensal dos pagamentos da conta de água. Os cards fornecem uma visão geral prática e rápida para monitorar os gastos com consumo hídrico. 🚿💧
                     </p>
                     <p>
-                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                        Sempre serão exibidos o mês atual e os dois anteriores para facilitar o acompanhamento atualizado. 🔄🗓️
+                    </p>
+                </div>
+
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">water_drop</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$450,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento da conta de água</small>
+                    </div>
+
+                    <div class="expenses">
+                        <span class="material-icons-sharp">water_drop</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$470,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento da conta de água</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">water_drop</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$454,71</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento da conta de água</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamento da conta de água. Cada linha representa um pagamento realizado, com o título, a data e o valor correspondente.
+                    </p>
+                    <p>
+                        ➕ Para registrar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título. Preencha o formulário com os dados solicitados e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        ⏰ Um lembrete automático será exibido todo <strong>dia 05</strong> de cada mês para lembrar você de efetuar o pagamento da conta de água. 📆🔔
                     </p>
                 </div>
 
                 <!-- Modal Registrar Pagamento Água -->
                 <div id="modalPagamentoAgua" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-agua">&times;</span>
-                    <h2>Registrar Pagamento de Água</h2>
-                    <form id="formPagamentoAgua">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-agua">&times;</span>
+                        <h2>Registrar Pagamento de Água</h2>
+                        <form id="formPagamentoAgua">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloAgua" name="tituloAgua" required><br><br>
 
-                    <label>Título</label><br>
-                    <input type="text" id="tituloAgua" name="tituloAgua" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataAgua" name="dataAgua" required><br><br>
 
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorAgua" name="valorAgua" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataAgua" name="dataAgua" required><br><br>
-
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorAgua" name="valorAgua" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO CONTA DE ÁGUA - AGOSTO/25</h2>
-                        <button id="btnAbrirModalAgua" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalAgua" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -344,9 +411,6 @@
                             <tr><td>Sabesp</td><td>01/08/2025</td><td>R$454,71</td></tr>
                         </tbody>
                     </table>
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalAgua">R$454,71</span>
-                    </div>
                 </div>
 
                 <!-- Bloco inserido abaixo -->
@@ -371,6 +435,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
                 </div>
             </section>
 
@@ -385,44 +468,92 @@
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas de Aluguel</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro das contas de aluguel. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        Abaixo você confere um resumo mensal dos pagamentos de aluguel. Os cards fornecem uma visão prática e rápida para monitorar os gastos com locações. 🏠💸
                     </p>
                     <p>
-                        ⏰ No dia <strong>05 de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar o aluguel. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                        Sempre serão exibidos o mês atual e os dois anteriores para facilitar o acompanhamento atualizado. 🔄🗓️
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">apartment</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$7.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do aluguel</small>
+                    </div>
 
-                <!-- Modal Registrar Pagamento Água -->
+                    <div class="expenses">
+                        <span class="material-icons-sharp">apartment</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$7.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do aluguel</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">apartment</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$7.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do aluguel</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamento do aluguel. Cada linha representa um pagamento realizado, com o título, a data e o valor correspondente.
+                    </p>
+                    <p>
+                        ➕ Para registrar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título. Preencha o formulário com os dados solicitados e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        ⏰ Um lembrete automático será exibido todo <strong>dia 05</strong> de cada mês para lembrar você de efetuar o pagamento do aluguel. 📆🔔
+                    </p>
+                </div>
+
+                <!-- Modal Registrar Pagamento Aluguel -->
                 <div id="modalPagamentoAluguel" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-aluguel">&times;</span>
-                    <h2>Registrar Pagamento de Aluguel</h2>
-                    <form id="formPagamentoAluguel">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-aluguel">&times;</span>
+                        <h2>Registrar Pagamento de Aluguel</h2>
+                        <form id="formPagamentoAluguel">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloAluguel" name="tituloAluguel" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloAluguel" name="tituloAluguel" required><br><br>
-                    
-                    <label>Data:</label><br>
-                    <input type="date" id="dataAluguel" name="dataAluguel" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataAluguel" name="dataAluguel" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorAluguel" name="valorAluguel" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorAluguel" name="valorAluguel" required><br><br>
 
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO ALUGUEL - AGOSTO/25</h2>
-                        <button id="btnAbrirModalAluguel" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalAluguel" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -435,9 +566,6 @@
                             <tr><td>Aluguel 2 galpões</td><td>05/08/2025</td><td>R$7.000,00</td></tr>
                         </tbody>
                     </table>
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalAluguel">R$7.000,00</span>
-                    </div>
                 </div>
 
                 <!-- Bloco inserido abaixo -->
@@ -463,12 +591,32 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
+                </div>
             </section>
 
 
 
 
-            <!-- A B A     D A    C O N T A B I L I D A D E-->
+
+            <!-- A B A     D A    C O N T A B I L I D A D E -->
             <section data-content="contabilidade">
                 <div class="title">🧾 CONTABILIDADE</div>
 
@@ -476,44 +624,92 @@
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas da Contabilidade</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro do pagamento ao seu contador. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        Abaixo você confere um resumo mensal dos pagamentos feitos ao contador. Os cards fornecem uma visão geral prática e rápida para monitorar os gastos com serviços contábeis. 💼📊
                     </p>
                     <p>
-                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar o contador. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                        Sempre serão exibidos o mês atual e os dois anteriores para facilitar o acompanhamento atualizado. 🔄🗓️
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">request_quote</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$1.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do contador</small>
+                    </div>
+
+                    <div class="expenses">
+                        <span class="material-icons-sharp">request_quote</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$1.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do contador</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">request_quote</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$1.000,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento do contador</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamento da contabilidade. Cada linha representa um pagamento realizado, com o título, a data e o valor correspondente.
+                    </p>
+                    <p>
+                        ➕ Para registrar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título. Preencha o formulário com os dados solicitados e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        ⏰ Um lembrete automático será exibido todo <strong>dia ?</strong> de cada mês para lembrar você de efetuar o pagamento da contabilidade. 📆🔔
+                    </p>
+                </div>
 
                 <!-- Modal Registrar Pagamento Contabilidade -->
                 <div id="modalPagamentoContabilidade" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-contabilidade">&times;</span>
-                    <h2>Registrar Pagamento de Contabilidade</h2>
-                    <form id="formPagamentoContabilidade">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-contabilidade">&times;</span>
+                        <h2>Registrar Pagamento de Contabilidade</h2>
+                        <form id="formPagamentoContabilidade">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloContabilidade" name="tituloContabilidade" required><br><br>
+                            
+                            <label>Data:</label><br>
+                            <input type="date" id="dataContabilidade" name="dataContabilidade" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloContabilidade" name="tituloContabilidade" required><br><br>
-                        
-                    <label>Data:</label><br>
-                    <input type="date" id="dataContabilidade" name="dataContabilidade" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorContabilidade" name="valorContabilidade" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorContabilidade" name="valorContabilidade" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO CONTABILIDADE - AGOSTO/25</h2>
-                        <button id="btnAbrirModalContabilidade" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalContabilidade" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -526,10 +722,9 @@
                             <tr><td>Lucas Contador</td><td>02/08/2025</td><td>R$1.000,00</td></tr>
                         </tbody>
                     </table>
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalContabilidade">R$1.000,00</span>
-                    </div>
                 </div>
+
+                <div class="title">ㅤ</div>
 
                 <!-- Bloco inserido abaixo -->
                 <div class="right">
@@ -554,6 +749,25 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
+                </div>
             </section>
 
 
@@ -561,50 +775,98 @@
 
             <!-- A B A     D A    E N E R G I A-->
             <section data-content="energia">
-                 <div class="title">⚡ ENERGIA</div>
+                <div class="title">⚡ ENERGIA</div>
 
                 <!-- Texto antes dos cards -->
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Contas de Energia</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro das contas de energia. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        Abaixo você confere um resumo mensal dos valores já pagos com energia elétrica. Os cards oferecem uma visão rápida e clara para acompanhar os gastos e auxiliar no controle financeiro. 💡📊
                     </p>
                     <p>
-                        ⏰ No dia <strong>? de cada mês</strong>, um lembrete automático será exibido para que você não se esqueça de pagar a conta. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
+                        Serão exibidos sempre o mês atual e os dois meses anteriores, garantindo um acompanhamento eficiente e atualizado. 🔄🗓️
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">bolt</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$312,90</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Consumo total do mês</small>
+                    </div>
 
-                <!-- Modal Registrar Pagamento Contabilidade -->
+                    <div class="expenses">
+                        <span class="material-icons-sharp">bolt</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$298,45</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Consumo total do mês</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">bolt</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$323,40</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Consumo total do mês</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicando a tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamentos das contas de energia. Cada linha representa um pagamento realizado, com a descrição, a data e o valor pago.
+                    </p>
+                    <p>
+                        ➕ Para adicionar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título. Em seguida, preencha o formulário com as informações necessárias e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        ⏰ Um lembrete automático será exibido todo <strong>dia ?</strong> de cada mês para lembrar do vencimento da conta de energia. 🔔⚡
+                    </p>
+                </div>
+
+                <!-- Modal Registrar Pagamento Energia -->
                 <div id="modalPagamentoEnergia" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-energia">&times;</span>
-                    <h2>Registrar Pagamento de Energia</h2>
-                    <form id="formPagamentoEnergia">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-energia">&times;</span>
+                        <h2>Registrar Pagamento de Energia</h2>
+                        <form id="formPagamentoEnergia">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloEnergia" name="tituloEnergia" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloEnergia" name="tituloEnergia" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataEnergia" name="dataEnergia" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataEnergia" name="dataEnergia" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorEnergia" name="valorEnergia" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorEnergia" name="valorEnergia" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO ENERGIA - AGOSTO/25</h2>
-                        <button id="btnAbrirModalEnergia" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalEnergia" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -617,10 +879,9 @@
                             <tr><td>Energia EDP</td><td>15/08/2025</td><td>R$323,40</td></tr>
                         </tbody>
                     </table>
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalEnergia">R$323,40</span>
-                    </div>
                 </div>
+
+                <div class="title">ㅤ</div>
 
                 <!-- Bloco inserido abaixo -->
                 <div class="right">
@@ -644,6 +905,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
                 </div>
             </section>
 
@@ -652,91 +932,157 @@
 
             <!-- A B A     D O S    F U N C I O N A R I O S-->
             <section data-content="funcionarios">
-                <div class="title">👷‍♂️ FUNCIONÁRIOS</div>
+            <div class="title">👷‍♂️ FUNCIONÁRIOS</div>
 
-                <!-- Texto antes dos cards -->
-                <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
-                    <p style="margin-bottom: 15px;">
-                        🏠 <strong>Bem-vindo à Central de Salários de Funcionários</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro do salário dos funcionários. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
-                    </p>
-                    <p>
-                        ⏰ No <strong>5º dia útil e no dia 20</strong>, um lembrete automático será exibido para que você não se esqueça de pagar os funcionários. Com essa funcionalidade, garantimos mais organização e pontualidade no controle financeiro. 💼📅
-                    </p>
+            <!-- Texto antes dos cards -->
+            <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                <p style="margin-bottom: 15px;">
+                    🏠 <strong>Bem-vindo à Central de Salários de Funcionários</strong><br>
+                    Abaixo você confere um resumo mensal dos valores já pagos em salários. Os cards oferecem uma visão rápida e prática para acompanhar os gastos ao longo dos meses e ajudar no planejamento financeiro. 💰📊
+                </p>
+                <p>
+                    Serão exibidos sempre o mês atual e os dois meses anteriores, garantindo um acompanhamento eficiente e atualizado. 🔄🗓️
+                </p>
+            </div>
+
+            <!-- Cards -->
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">attach_money</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>VALOR GASTO EM JUNHO</h3>
+                            <h1>R$25.024,89</h1>
+                        </div>
+                    </div>
+                    <small class="text-muted">Pagamento dos funcionários</small>
                 </div>
 
+                <div class="expenses">
+                    <span class="material-icons-sharp">attach_money</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>VALOR GASTO EM JULHO</h3>
+                            <h1>R$14.160,87</h1>
+                        </div>
+                    </div>
+                    <small class="text-muted">Pagamento dos funcionários</small>
+                </div>
 
-                <!-- Modal Registrar Pagamento Funcionarios -->
-                <div id="modalPagamentoFuncionarios" class="modal">
+                <div class="income">
+                    <span class="material-icons-sharp">attach_money</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>VALOR GASTO EM AGOSTO</h3>
+                            <h1>R$14.160,87</h1>
+                        </div>
+                    </div>
+                    <small class="text-muted">Pagamento dos funcionários</small>
+                </div>
+            </div>
+
+            <!-- Texto explicando a tabela -->
+            <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                <p style="margin-bottom: 15px;">
+                    📋 Abaixo está a tabela de registros de pagamento dos funcionários. Cada entrada representa um pagamento realizado, com sua respectiva data e valor.
+                </p>
+                <p>
+                    ➕ Para adicionar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título da seção. Um formulário será exibido para que você preencha com o <strong>título</strong>, <strong>data</strong> e <strong>valor</strong> do pagamento. Após salvar, a nova informação será exibida na tabela automaticamente. ✅
+                </p>
+                <p>
+                    ⏰ Um lembrete automático será exibido todo <strong>5º dia útil</strong> e no <strong>dia 20</strong> de cada mês para garantir que os pagamentos sejam feitos em dia. 💼📅
+                </p>
+            </div>
+
+            <!-- Modal Registrar Pagamento Funcionarios -->
+            <div id="modalPagamentoFuncionarios" class="modal">
                 <div class="modal-content">
                     <span class="close-button-pagamento-funcionarios">&times;</span>
                     <h2>Registrar Pagamento de Funcionários</h2>
                     <form id="formPagamentoFuncionarios">
+                        <label>Título:</label><br>
+                        <input type="text" id="tituloFuncionarios" name="tituloFuncionarios" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloFuncionarios" name="tituloFuncionarios" required><br><br>
+                        <label>Data:</label><br>
+                        <input type="date" id="dataFuncionarios" name="dataFuncionarios" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataFuncionarios" name="dataFuncionarios" required><br><br>
+                        <label>Valor:</label><br>
+                        <input type="text" id="valorFuncionarios" name="valorFuncionarios" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorFuncionarios" name="valorFuncionarios" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                        <button type="submit" class="btn btn-primary">SALVAR</button>
                     </form>
                 </div>
-                </div>
+            </div>
 
+            <!-- Título + botão "+" -->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                <h2 style="margin: 0;">PAGAMENTO FUNCIONÁRIOS - AGOSTO/25</h2>
+                <button id="btnAbrirModalFuncionarios" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                    +
+                </button>
+            </div>
 
-                <!-- Título + botão "+" -->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-                    <h2 style="margin: 0;">PAGAMENTO FUNCIONÁRIOS - AGOSTO/25</h2>
-                        <button id="btnAbrirModalFuncionarios" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
-                </div>
-                    <div class="recent-orders">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Data</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody id="funcionarios-body">
-                            <tr><td>Salário Julho</td><td>31/07/2025</td><td>R$21.142,30</td></tr>
-                        </tbody>
-                    </table>
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalFuncionarios">R$21.142,30</span>
+            <!-- Tabela -->
+            <div class="recent-orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Data</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="funcionarios-body">
+                        <tr><td>Salário Julho</td><td>31/07/2025</td><td>R$21.142,30</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="title">ㅤ</div>
+
+            <!-- Bloco inserido abaixo -->
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+
+                    <div class="profile">
+                        <div class="info">
+                            <p>Olá, <b>Heitor</b></p>
+                            <small class="text-muted">Dono</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-
-                <!-- Bloco inserido abaixo -->
-                <div class="right">
-                    <div class="top">
-                        <button id="menu-btn"> 
-                            <span class="material-icons-sharp">menu</span>
-                        </button>
-
-                        <div class="theme-toggler">
-                            <span class="material-icons-sharp active">light_mode</span>
-                            <span class="material-icons-sharp">dark_mode</span>
-                        </div>
-
-                        <div class="profile">
-                            <div class="info">
-                                <p>Olá, <b>Heitor</b></p>
-                                <small class="text-muted">Dono</small>
-                            </div>
-                            <div class="profile-photo">
-                                <img src="./images/profile-1.jpg" alt="">
-                            </div>
-                        </div>
+            </div>
+            <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
                     </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
                 </div>
-            </section>
+        </section>
 
 
 
@@ -748,42 +1094,93 @@
                 <!-- Texto antes dos cards -->
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
-                        🏠 <strong>Bem-vindo à Central de Gás</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro das contas de Gás. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        🧯 <strong>Bem-vindo à Central de Contas de Gás</strong><br>
+                        Abaixo você confere um resumo mensal dos pagamentos realizados com gás. Os cards facilitam o acompanhamento visual e rápido dos custos com abastecimento. 🔥📊
+                    </p>
+                    <p>
+                        Sempre serão exibidos o mês atual e os dois anteriores para facilitar o acompanhamento atualizado. 🔄🗓️
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">local_fire_department</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$180,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento de gás</small>
+                    </div>
+
+                    <div class="expenses">
+                        <span class="material-icons-sharp">local_fire_department</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$182,21</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento de gás</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">local_fire_department</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$0,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Pagamento de gás</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamento do gás. Cada linha representa uma compra ou abastecimento de gás, com seu título, data e valor.
+                    </p>
+                    <p>
+                        ➕ Para registrar um novo pagamento, clique no botão <strong>"+"</strong> ao lado do título. Preencha o formulário com os dados solicitados e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        ⏰ Um lembrete automático será exibido todo <strong>dia 10</strong> de cada mês para lembrar você de efetuar o abastecimento de gás, caso necessário. 🔔📅
+                    </p>
+                </div>
 
                 <!-- Modal Registrar Pagamento Gás -->
                 <div id="modalPagamentoGas" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-gas">&times;</span>
-                    <h2>Registrar Pagamento de Gás</h2>
-                    <form id="formPagamentoGas">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-gas">&times;</span>
+                        <h2>Registrar Pagamento de Gás</h2>
+                        <form id="formPagamentoGas">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloGas" name="tituloGas" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloGas" name="tituloGas" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataGas" name="dataGas" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataGas" name="dataGas" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorGas" name="valorGas" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorGas" name="valorGas" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO GÁS - AGOSTO/25</h2>
-                        <button id="btnAbrirModalGas" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalGas" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -797,11 +1194,6 @@
                             <tr><td>1 gás de cozinha</td><td>31/07/2025</td><td>R$101,00</td></tr>
                         </tbody>
                     </table>
-
-                    <!-- Valor Gasto -->
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalGas">R$182,21</span>
-                    </div>
                 </div>
 
                 <!-- Bloco inserido abaixo -->
@@ -826,6 +1218,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
                 </div>
             </section>
 
@@ -838,6 +1249,8 @@
                 <p>Estoque e movimentações de materiais...</p>
             </section>
     
+
+
             
             <!-- A B A     D A S     R E F E I C O E S-->
             <section data-content="refeicoes">
@@ -847,41 +1260,92 @@
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
                         🏠 <strong>Bem-vindo à Central de Refeições</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro das refeições. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        Esta seção foi criada para facilitar o controle e o registro dos gastos com alimentação. Abaixo estão os cards com os valores pagos recentemente. 🍽️💰
+                    </p>
+                    <p>
+                        Assim como nas outras áreas do sistema, você verá os valores dos meses mais recentes para manter o controle atualizado. 🔄🗓️
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">restaurant</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$187,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Refeições</small>
+                    </div>
 
-                <!-- Modal Registrar Pagamento Gás -->
+                    <div class="expenses">
+                        <span class="material-icons-sharp">restaurant</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$291,21</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Refeições</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">restaurant</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$621,21</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Refeições</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamentos de refeições. Cada linha representa uma despesa registrada, com o título, a data e o valor correspondente.
+                    </p>
+                    <p>
+                        ➕ Para adicionar uma nova refeição, clique no botão <strong>"+"</strong>, preencha o formulário e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        📌 Esse controle é importante para acompanhamento de despesas mensais com alimentação, garantindo transparência e organização. 📊📆
+                    </p>
+                </div>
+
+                <!-- Modal Registrar Pagamento Refeições -->
                 <div id="modalPagamentoRefeicoes" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-refeicoes">&times;</span>
-                    <h2>Registrar Pagamento de Refeições</h2>
-                    <form id="formPagamentoRefeicoes">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-refeicoes">&times;</span>
+                        <h2>Registrar Pagamento de Refeições</h2>
+                        <form id="formPagamentoRefeicoes">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloRefeicoes" name="tituloRefeicoes" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloRefeicoes" name="tituloGas" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataRefeicoes" name="dataRefeicoes" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataRefeicoes" name="dataRefeicoes" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorRefeicoes" name="valorRefeicoes" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorRefeicoes" name="valorRefeicoes" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO REFEIÇÕES - AGOSTO/25</h2>
-                        <button id="btnAbrirModalRefeicoes" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalRefeicoes" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -894,10 +1358,6 @@
                             <tr><td>Café da manhã</td><td>01/08/2025</td><td>R$61,21</td></tr>
                         </tbody>
                     </table>
-
-                    <div style="margin-top: 15px; font-size: 18px; font-weight: bold;">
-                        VALOR GASTO: <span id="valorTotalRefeicoes">R$61,21</span>
-                    </div>
                 </div>
 
                 <!-- Bloco inserido abaixo -->
@@ -922,6 +1382,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
                 </div>
             </section>
 
@@ -936,42 +1415,93 @@
                 <!-- Texto antes dos cards -->
                 <div class="intro-text" style="margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
                     <p style="margin-bottom: 15px;">
-                        🏠 <strong>Bem-vindo à Central de Diversos</strong><br>
-                        Esta seção foi criada para facilitar o controle e o registro de contas diversas, que não se encaixam em nenhuma das outras abas. Para adicionar um novo pagamento, basta clicar em <strong>"+"</strong> e preencher o formulário com o <strong>valor</strong> e a <strong>data</strong> do pagamento. Simples e rápido! ✅
+                        🏠 <strong>Bem-vindo à Central de Contas Diversas</strong><br>
+                        Esta seção foi criada para facilitar o controle e o registro de despesas que não se encaixam em nenhuma das outras categorias. Os cards abaixo mostram os gastos recentes. 📦💸
+                    </p>
+                    <p>
+                        Você encontrará sempre os três meses mais recentes para manter a gestão financeira organizada. 🔄📅
                     </p>
                 </div>
 
+                <!-- Cards -->
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">payments</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JUNHO</h3>
+                                <h1>R$874,54</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Diversos</small>
+                    </div>
+
+                    <div class="expenses">
+                        <span class="material-icons-sharp">payments</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM JULHO</h3>
+                                <h1>R$120,85</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Diversos</small>
+                    </div>
+
+                    <div class="income">
+                        <span class="material-icons-sharp">payments</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>VALOR GASTO EM AGOSTO</h3>
+                                <h1>R$85,00</h1>
+                            </div>
+                        </div>
+                        <small class="text-muted">Diversos</small>
+                    </div>
+                </div>
+
+                <!-- Texto explicativo da tabela -->
+                <div class="intro-text" style="margin-top: 25px; margin-bottom: 25px; padding: 20px; background-color: #f9f9f9; border-left: 5px solid #ff7782; border-radius: 6px;">
+                    <p style="margin-bottom: 15px;">
+                        📋 Abaixo está a tabela com os registros de pagamentos diversos. Cada linha representa uma despesa realizada, com o título, a data e o valor correspondente.
+                    </p>
+                    <p>
+                        ➕ Para registrar um novo pagamento, clique no botão <strong>"+"</strong>, preencha o formulário com os dados solicitados e clique em "Salvar". ✅
+                    </p>
+                    <p>
+                        🔍 Use esta aba para registrar gastos pontuais como hospedagens, compras variadas, serviços específicos e outras despesas sem categoria fixa. 🧾📦
+                    </p>
+                </div>
 
                 <!-- Modal Registrar Pagamento Diversos -->
                 <div id="modalPagamentoDiversos" class="modal">
-                <div class="modal-content">
-                    <span class="close-button-pagamento-diversos">&times;</span>
-                    <h2>Registrar Pagamento de Outras coisas</h2>
-                    <form id="formPagamentoDiversos">
+                    <div class="modal-content">
+                        <span class="close-button-pagamento-diversos">&times;</span>
+                        <h2>Registrar Pagamento de Outras Coisas</h2>
+                        <form id="formPagamentoDiversos">
+                            <label>Título:</label><br>
+                            <input type="text" id="tituloDiversos" name="tituloDiversos" required><br><br>
 
-                    <label>Título:</label><br>
-                    <input type="text" id="tituloDiversos" name="tituloDiversos" required><br><br>
+                            <label>Data:</label><br>
+                            <input type="date" id="dataDiversos" name="dataDiversos" required><br><br>
 
-                    <label>Data:</label><br>
-                    <input type="date" id="dataDiversos" name="dataDiversos" required><br><br>
+                            <label>Valor:</label><br>
+                            <input type="text" id="valorDiversos" name="valorDiversos" required><br><br>
 
-                    <label>Valor:</label><br>
-                    <input type="text" id="valorDiversos" name="valorDiversos" required><br><br>
-
-                    <button type="submit" class="btn btn-primary">SALVAR</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">SALVAR</button>
+                        </form>
+                    </div>
                 </div>
-                </div>
-
 
                 <!-- Título + botão "+" -->
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <h2 style="margin: 0;">PAGAMENTO DIVERSOS - AGOSTO/25</h2>
-                        <button id="btnAbrirModalDiversos" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
-                            +
-                        </button>
+                    <button id="btnAbrirModalDiversos" class="btn-adicionar" style="padding: 6px 14px; font-size: 24px; border: none; border-radius: 6px; cursor: pointer;">
+                        +
+                    </button>
                 </div>
-                    <div class="recent-orders">
+
+                <!-- Tabela -->
+                <div class="recent-orders">
                     <table>
                         <thead>
                             <tr>
@@ -1010,7 +1540,27 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    <p>ㅤㅤㅤ</p>
+                    </div>
+                <div class="page-title">
+                    <a>© 2025 PontoCom - Raul Guilherme. Todos os direitos reservados</a>       
+                </div>
             </section>
+
 
         </main>
     </div>
