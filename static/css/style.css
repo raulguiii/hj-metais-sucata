@@ -806,16 +806,7 @@ main .recent-orders a{
   box-shadow: 0 6px 15px rgba(58, 12, 163, 0.2);
 }
 
-.btn-adicionar {
-  background: linear-gradient(135deg, var(--color-danger), var(--color-danger));
-  color: white;
-}
 
-.btn-adicionar:hover {
-  background: linear-gradient(135deg, var(--secondary, #0056b3), var(--primary, #007bff));
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(58, 12, 163, 0.2);
-}
 
 /* Ajuste para inputs e textarea */
 .modal-content input[type="text"],
