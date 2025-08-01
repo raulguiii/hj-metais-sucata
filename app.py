@@ -65,13 +65,26 @@ def adicionar_agua():
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO agua (titulo, data, valor) VALUES (%s, %s, %s)",
-                       (titulo, data_pagamento, valor_formatado))
+
+        # Inserir na tabela agua
+        cursor.execute(
+            "INSERT INTO agua (titulo, data, valor) VALUES (%s, %s, %s)",
+            (titulo, data_pagamento, valor_formatado)
+        )
+
+        # Inserir na tabela geral
+        cursor.execute(
+            "INSERT INTO geral (titulo, data, valor) VALUES (%s, %s, %s)",
+            (titulo, data_pagamento, valor_formatado)
+        )
+
         conn.commit()
         conn.close()
+
         return jsonify({"mensagem": "Pagamento registrado com sucesso"}), 201
+
     except Error as e:
-        print(f"Erro ao inserir pagamento de água: {e}")
+        print(f"Erro ao inserir pagamento: {e}")
         return jsonify({"erro": "Erro no servidor"}), 500
 
 

@@ -5,8 +5,30 @@ USE db_hj_metais_sucata;
 
 --  ---------------------------------------
 
+
+-- TABLE GERAL
+select * from geral;
+
+DELETE FROM geral WHERE id = 10;
+
+CREATE TABLE geral (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    data DATE NOT NULL,
+    valor DECIMAL(15,2) NOT NULL
+);
+
+drop table geral;
+
+
+--  ---------------------------------------
+
+
 -- TABLE AGUA
 select * from agua;
+
+INSERT INTO agua (titulo, data, valor)
+VALUES ('Dois galao', '2025-08-01', 20.71);
 
 DELETE FROM agua WHERE id = 10;
 
